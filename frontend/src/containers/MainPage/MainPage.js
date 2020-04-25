@@ -19,7 +19,7 @@ class MainPage extends Component {
                     <Grid item xs={12} md={10} lg={4}>
                         <Grid container direction="column" spacing={10}>
                             {this.props.cocktails.length === 0 && <Grid item xs><Box pt={2} pb={2}>
-                                <Typography variant="h4">There is nothing yet</Typography>
+                                <Typography variant="h4">There is nothing yet.</Typography>
                             </Box></Grid>}
                             {this.props.cocktails.map(cocktail => (
                                 <Grid item xs key={cocktail._id}>
